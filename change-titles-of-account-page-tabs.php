@@ -1,6 +1,6 @@
 <?php
 
-function iso_reorder_my_account_menu() {
+function my_account_order_title() {
     $newtaborder = array(
         'learner-profile'    => __( 'Profile', 'woocommerce' ),
         //'dashboard'          => __( 'Dashboard', 'woocommerce' ),
@@ -12,4 +12,4 @@ function iso_reorder_my_account_menu() {
     );
     return $newtaborder;
 }
-add_filter ( 'woocommerce_account_menu_items', 'iso_reorder_my_account_menu' );
+add_filter ( 'woocommerce_account_menu_items', 'my_account_order_title' );
